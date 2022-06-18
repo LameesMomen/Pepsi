@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pepsi</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav class="navbar navbar-expand-lg bg-transparent navbar-dark p-1">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="./images/logo.png" alt="">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#">Menu</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#">What's New</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="row content">
+                <div class="col-sm-12 col-md-12 col-lg-6 title">
+                    <h1>THAT'S WHAT <br> I LIKE</h1>
+                    <div class="textbox">
+                        <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem accusamus eos explicabo? Molestias, quos quis quia magni enim ducimus quaerat iure? Natus reiciendis quas dicta facilis voluptatibus, blanditiis impedit dignissimos?
+                            Consequatur accusamus laborum officia consequuntur voluptates sint voluptatibus sequi repellendus expedita! Distinctio quae atque ex doloremque similique eius error.</p>
+                    </div>
+                    <div class="learnmore">
+                        <a class="btn" href="#">View All Products</a>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-6 mt-sm-3 imgbox">
+                    <img id="pepsi-img" src="./images/pepsi001.png " alt=" " style="height:300px ;">
+                    <img class="ice-img" src="./images/ice-png-31295.png " alt=" ">
+                </div>
+
+            </div>
+            <div class="row ">
+                <div class="pepsi-images d-flex justify-content-center my-3 ">
+                    <img src="./images/pepsi001.png " onclick="ChangeImg( './images/pepsi001.png');ChangeBg( 'rgb(45, 45, 254)') " alt=" ">
+                    <img src="./images/pepsi002.png " onclick="ChangeImg( './images/pepsi002.png');ChangeBg( '#e51e2a') " alt=" ">
+                    <img src="./images/pepsi003.png " onclick="ChangeImg( './images/pepsi003.png');ChangeBg( '#161616') " alt=" ">
+                </div>
+            </div>
+        </header>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js " integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4 " crossorigin="anonymous "></script>
+    <script>
+        function ChangeImg(imgSource) {
+            var element = document.getElementById("pepsi-img");
+            element.src = imgSource;
+        }
+
+        function ChangeBg(value) {
+            document.body.style.backgroundColor = value;
+        }
+    </script>
+</body>
+
+</html>

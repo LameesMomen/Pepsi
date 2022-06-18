@@ -1,0 +1,103 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+body {
+    background-color: rgb(45, 45, 254);
+}
+
+.nav-link {
+    font-size: large;
+    margin-right: 30px;
+}
+
+.content {
+    padding: 30px;
+}
+
+.content .title h1 {
+    color: white;
+    font-size: 70px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.content .learnmore {
+    width: 180px;
+    height: 40px;
+    border-radius: 30px;
+    background-color: white;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+}
+
+.content .learnmore a {
+    text-decoration: none;
+    color: black;
+}
+
+.content .learnmore:hover {
+    background-color: rgb(170, 170, 255);
+}
+
+.content .imgbox {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+#pepsi-img {
+    height: 300px;
+    position: absolute;
+    top: 0;
+    animation-name: example;
+    animation-duration: 2s;
+}
+
+.content .imgbox .ice-img {
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    right: -20px;
+    top: 0px;
+    z-index: 10px;
+}
+
+@keyframes example {
+    from {
+        top: -490px;
+    }
+    to {
+        top: 0;
+    }
+}
+
+.pepsi-images img {
+    width: 50px;
+    height: 80px;
+    margin-right: 20px;
+    transition: 0.3s ease-in-out;
+    z-index: 10;
+}
+
+.pepsi-images img:hover {
+    transform: translateY(-20px);
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 990px) {
+    .pepsi-images {
+        position: relative;
+        top: 350px;
+    }
+    .content .imgbox .ice-img {
+        width: 600px;
+        height: 400px;
+        position: absolute;
+        right: -20px;
+        top: 0px;
+        z-index: 10px;
+    }
+}
